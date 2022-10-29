@@ -8,8 +8,96 @@
 
 body {
   font-family: 'Lexend Deca', sans-serif;
+  height: 100vh;
+  background-color: hsl(0, 0%, 95%);
+  font-size: 15px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.container {
+  display: flex;
+  width: 900px;
+  border-radius: 8px;
+  overflow: hidden;
+}
+
+article {
+  padding: 45px;
+  width: 300px;
+}
+
+.sedans {
+  background-color: hsl(31, 77%, 52%);
+}
+
+.suvs {
+  background-color: hsl(184, 100%, 22%);
+}
+
+.luxury {
+  background-color: hsl(179, 100%, 13%);
 }
 
 h1 {
   font-family: 'Big Shoulders Display', cursive;
+  color: hsl(0, 0%, 95%);
+  margin: 25px 0;
+  font-size: 38px;
+}
+
+p {
+  color: hsla(0, 0%, 100%, 0.75);
+  line-height: 25px;
+  margin-bottom: 90px;
+}
+
+input[type=button] {
+  background-color: white;
+  border: 3px solid hsla(0, 0%, 100%, 0.75);
+  padding: 12px 30px;
+  border-radius: 25px;
+  cursor: pointer;
+  font-family: inherit;
+}
+.sedans input {
+  color: hsl(31, 77%, 52%);
+}
+
+.suvs input {
+  color: hsl(184, 100%, 22%);
+}
+
+.luxury input {
+  color: hsl(179, 100%, 13%);
+}
+
+input[type=button]:active {
+  background-color: inherit;
+  color: hsla(0, 0%, 100%, 0.75);
+}
+
+@media only screen and (max-width: 380px) {
+  body {
+    height: 100%;
+  }
+
+  .container {
+    flex-direction: column;
+    width: 300px;
+    margin: 30px;
+  }
+
+  article {
+    padding: 35px;
+  }
+
+  h1 {
+    margin: 15px 0;
+  }
+
+  p {
+    margin-bottom: 20px;
+  }
 }
